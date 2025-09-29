@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://b05q8nje0vc5u"]
+
+[ext_resource type="Texture2D" uid="uid://bnd70xkgv05j2" path="res://ASSETS/Art/Characters/BlockingCharacterSpriteSheet128px.png" id="1_200dq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2in8s"]
+atlas = ExtResource("1_200dq")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hihm"]
+atlas = ExtResource("1_200dq")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocwdl"]
+atlas = ExtResource("1_200dq")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qpxul"]
+atlas = ExtResource("1_200dq")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lv5x4"]
+atlas = ExtResource("1_200dq")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6btm"]
+atlas = ExtResource("1_200dq")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgl27"]
+atlas = ExtResource("1_200dq")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_grb44"]
+atlas = ExtResource("1_200dq")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1nb1l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2in8s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hihm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ocwdl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qpxul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lv5x4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6btm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgl27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_grb44")
+}],
+"loop": true,
+"name": &"walk_up_left",
+"speed": 11.0
+}]
+
+[node name="Bones" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1nb1l")
+animation = &"walk_up_left"
+frame_progress = 0.995363

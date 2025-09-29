@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkujl704yentj"
-path="res://.godot/imported/JoystickRing.png-885c0e546c7646d619b2e24173654b69.ctex"
+uid="uid://bnd70xkgv05j2"
+path="res://.godot/imported/BlockingCharacterSpriteSheet128px.png-d3f0286b4c3ffca2bb3864e0b009d646.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Art/joystick/JoystickRing.png"
-dest_files=["res://.godot/imported/JoystickRing.png-885c0e546c7646d619b2e24173654b69.ctex"]
+source_file="res://ASSETS/Art/Characters/BlockingCharacterSpriteSheet128px.png"
+dest_files=["res://.godot/imported/BlockingCharacterSpriteSheet128px.png-d3f0286b4c3ffca2bb3864e0b009d646.ctex"]
 
 [params]
 
