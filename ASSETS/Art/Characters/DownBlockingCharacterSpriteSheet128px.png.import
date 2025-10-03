@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnd70xkgv05j2"
-path="res://.godot/imported/BlockingCharacterSpriteSheet128px.png-d3f0286b4c3ffca2bb3864e0b009d646.ctex"
+uid="uid://1hjqs8j1coja"
+path="res://.godot/imported/DownBlockingCharacterSpriteSheet128px.png-0d296a04b4703df6c09914696c9e8b23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Art/Characters/BlockingCharacterSpriteSheet128px.png"
-dest_files=["res://.godot/imported/BlockingCharacterSpriteSheet128px.png-d3f0286b4c3ffca2bb3864e0b009d646.ctex"]
+source_file="res://ASSETS/Art/Characters/DownBlockingCharacterSpriteSheet128px.png"
+dest_files=["res://.godot/imported/DownBlockingCharacterSpriteSheet128px.png-0d296a04b4703df6c09914696c9e8b23.ctex"]
 
 [params]
 
