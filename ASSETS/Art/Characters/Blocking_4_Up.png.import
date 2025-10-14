@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bimabaww8mk4u"
-path="res://.godot/imported/Blocking_3_Down.png-de43480289a8ff04d7ca38971b475bac.ctex"
+uid="uid://m3oqfmpqswrv"
+path="res://.godot/imported/Blocking_4_Up.png-03b9ed250dad0b0dbf5c3b7f5a1849ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Art/Characters/Blocking_3_Down.png"
-dest_files=["res://.godot/imported/Blocking_3_Down.png-de43480289a8ff04d7ca38971b475bac.ctex"]
+source_file="res://ASSETS/Art/Characters/Blocking_4_Up.png"
+dest_files=["res://.godot/imported/Blocking_4_Up.png-03b9ed250dad0b0dbf5c3b7f5a1849ab.ctex"]
 
 [params]
 
