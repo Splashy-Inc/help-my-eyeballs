@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyuqmihnrikqg"
-path="res://.godot/imported/surrealm_tileset_128px.png-50ec4e1bfbf0767443441bf2cb013eeb.ctex"
+uid="uid://bfqv73l17qdm6"
+path="res://.godot/imported/dirt_tileset_128x64px.png-350118fa26763ff4608dbf21e9338e38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Art/Tileset/surrealm_tileset_128px.png"
-dest_files=["res://.godot/imported/surrealm_tileset_128px.png-50ec4e1bfbf0767443441bf2cb013eeb.ctex"]
+source_file="res://ASSETS/Art/Tileset/dirt_tileset_128x64px.png"
+dest_files=["res://.godot/imported/dirt_tileset_128x64px.png-350118fa26763ff4608dbf21e9338e38.ctex"]
 
 [params]
 
