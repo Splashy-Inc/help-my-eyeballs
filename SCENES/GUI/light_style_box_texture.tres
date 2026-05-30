@@ -1,0 +1,14 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://d25ahmiih6n6f"]
+
+[ext_resource type="Texture2D" uid="uid://bavk2ji75mxtl" path="res://SCENES/GUI/GraphicUserInterface_64X64.png" id="1_iofcu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c68ib"]
+atlas = ExtResource("1_iofcu")
+region = Rect2(768, 128, 320, 64)
+
+[resource]
+texture = SubResource("AtlasTexture_c68ib")
+texture_margin_left = 64.0
+texture_margin_top = 13.0
+texture_margin_right = 64.0
+texture_margin_bottom = 8.0

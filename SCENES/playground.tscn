@@ -1,28 +1,105 @@
-[gd_scene load_steps=9 format=3 uid="uid://dhvgc0glasyim"]
+[gd_scene format=3 uid="uid://dhvgc0glasyim"]
 
-[ext_resource type="Script" path="res://SCRIPTS/playground.gd" id="1_5e8d0"]
-[ext_resource type="PackedScene" uid="uid://dx3s73knm5n1u" path="res://SCENES/parallax_background.tscn" id="2_ffhdr"]
-[ext_resource type="PackedScene" uid="uid://d1fnfg5c0hmib" path="res://SCENES/tilemap_background.tscn" id="2_o64ee"]
+[ext_resource type="Script" uid="uid://saoblopuuyxl" path="res://SCRIPTS/playground.gd" id="1_5e8d0"]
+[ext_resource type="PackedScene" uid="uid://bj6mjo4n8vet7" path="res://SCENES/Tilesets/game_tile_map.tscn" id="2_ktou3"]
 [ext_resource type="PackedScene" uid="uid://cwr6cg26cwtpw" path="res://SCENES/DialogSystem/dialog_box.tscn" id="2_xgpxw"]
 [ext_resource type="Resource" uid="uid://cavw65m6hlnw3" path="res://Dialogs/example_dialog_data.tres" id="3_5ii31"]
 [ext_resource type="Texture2D" uid="uid://b4n6irf1jephl" path="res://icon.svg" id="3_vq471"]
 [ext_resource type="PackedScene" uid="uid://b77mh17y84d50" path="res://SCENES/GUI/mobile_controls.tscn" id="7_uhrci"]
+[ext_resource type="PackedScene" uid="uid://b05q8nje0vc5u" path="res://SCENES/Characters/bones.tscn" id="8_kk3q7"]
 [ext_resource type="PackedScene" uid="uid://bvp1lppkqj5qi" path="res://SCENES/GUI/level_ui.tscn" id="8_y8n3e"]
+[ext_resource type="PackedScene" uid="uid://g8ngbn6pfdtq" path="res://SCENES/Characters/eyeball.tscn" id="9_kk3q7"]
+[ext_resource type="PackedScene" uid="uid://bflbxvfhilbrl" path="res://SCENES/Characters/Environment_Leaf.tscn" id="10_5u8wx"]
+[ext_resource type="PackedScene" uid="uid://b0fg4gljegexm" path="res://SCENES/Characters/Environment_Candy_Corn.tscn" id="11_68f5m"]
+[ext_resource type="PackedScene" uid="uid://bv3pvlfvwd216" path="res://SCENES/Characters/Environment_Clam.tscn" id="12_xdw11"]
 
-[node name="Playground" type="Node" node_paths=PackedStringArray("dialog_box", "mobile_controls")]
+[node name="Playground" type="Node" unique_id=2077243959 node_paths=PackedStringArray("dialog_box", "mobile_controls")]
 script = ExtResource("1_5e8d0")
 dialog_box = NodePath("DialogBox")
 mobile_controls = NodePath("MobileControls")
 
-[node name="ParallaxBackground" parent="." instance=ExtResource("2_ffhdr")]
+[node name="GameTileMap" parent="." unique_id=1031532842 instance=ExtResource("2_ktou3")]
 
-[node name="TileMapBackground" parent="." instance=ExtResource("2_o64ee")]
-
-[node name="DialogBox" parent="." instance=ExtResource("2_xgpxw")]
+[node name="DialogBox" parent="." unique_id=1312096921 instance=ExtResource("2_xgpxw")]
+visible = false
 left_texture = ExtResource("3_vq471")
 right_texture = ExtResource("3_vq471")
 dialog_data = ExtResource("3_5ii31")
 
-[node name="MobileControls" parent="." instance=ExtResource("7_uhrci")]
+[node name="MobileControls" parent="." unique_id=1090273758 instance=ExtResource("7_uhrci")]
 
-[node name="LevelUI" parent="." instance=ExtResource("8_y8n3e")]
+[node name="LevelUI" parent="." unique_id=1062606963 instance=ExtResource("8_y8n3e")]
+
+[node name="player" parent="." unique_id=1985784027 instance=ExtResource("8_kk3q7")]
+position = Vector2(835, 472)
+
+[node name="balls" type="Node2D" parent="." unique_id=194810049]
+position = Vector2(490, 680)
+
+[node name="Eyeball" parent="balls" unique_id=1838037291 instance=ExtResource("9_kk3q7")]
+position = Vector2(481, -180)
+
+[node name="Eyeball2" parent="balls" unique_id=619668564 instance=ExtResource("9_kk3q7")]
+position = Vector2(440, -178)
+
+[node name="Plants" type="Node2D" parent="." unique_id=843911726]
+
+[node name="Leaf" parent="Plants" unique_id=1009159685 instance=ExtResource("10_5u8wx")]
+position = Vector2(505, 277)
+
+[node name="Leaf2" parent="Plants" unique_id=1199511721 instance=ExtResource("10_5u8wx")]
+position = Vector2(570, 232)
+
+[node name="Leaf3" parent="Plants" unique_id=672923055 instance=ExtResource("10_5u8wx")]
+position = Vector2(569, 305)
+
+[node name="Leaf4" parent="Plants" unique_id=446938762 instance=ExtResource("10_5u8wx")]
+position = Vector2(589, 263)
+
+[node name="Leaf5" parent="Plants" unique_id=1339984434 instance=ExtResource("10_5u8wx")]
+position = Vector2(543, 265)
+
+[node name="Leaf6" parent="Plants" unique_id=1840150771 instance=ExtResource("10_5u8wx")]
+position = Vector2(540, 228)
+
+[node name="Leaf7" parent="Plants" unique_id=1349269710 instance=ExtResource("10_5u8wx")]
+position = Vector2(514, 229)
+
+[node name="Leaf8" parent="Plants" unique_id=1742724914 instance=ExtResource("10_5u8wx")]
+position = Vector2(521, 308)
+
+[node name="Leaf9" parent="Plants" unique_id=1957497848 instance=ExtResource("10_5u8wx")]
+position = Vector2(544, 307)
+
+[node name="Leaf10" parent="Plants" unique_id=960673942 instance=ExtResource("10_5u8wx")]
+position = Vector2(558, 333)
+
+[node name="Candy_Corn" parent="Plants" unique_id=631758395 instance=ExtResource("11_68f5m")]
+position = Vector2(1020, 369)
+
+[node name="Candy_Corn2" parent="Plants" unique_id=2107345576 instance=ExtResource("11_68f5m")]
+position = Vector2(1109, 500)
+
+[node name="Clam" parent="Plants" unique_id=1819271968 instance=ExtResource("12_xdw11")]
+position = Vector2(575, 558)
+
+[node name="Clam2" parent="Plants" unique_id=77709815 instance=ExtResource("12_xdw11")]
+position = Vector2(544, 597)
+
+[node name="Clam3" parent="Plants" unique_id=387696157 instance=ExtResource("12_xdw11")]
+position = Vector2(609, 590)
+
+[node name="Clam4" parent="Plants" unique_id=619795657 instance=ExtResource("12_xdw11")]
+position = Vector2(570, 636)
+
+[node name="Clam5" parent="Plants" unique_id=1500679919 instance=ExtResource("12_xdw11")]
+position = Vector2(633, 648)
+
+[node name="Clam6" parent="Plants" unique_id=417429394 instance=ExtResource("12_xdw11")]
+position = Vector2(678, 595)
+
+[node name="Clam7" parent="Plants" unique_id=1104679813 instance=ExtResource("12_xdw11")]
+position = Vector2(740, 612)
+
+[node name="Clam8" parent="Plants" unique_id=1869384024 instance=ExtResource("12_xdw11")]
+position = Vector2(583, 690)

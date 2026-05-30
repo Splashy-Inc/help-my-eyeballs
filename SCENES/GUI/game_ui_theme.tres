@@ -1,0 +1,47 @@
+[gd_resource type="Theme" format=3 uid="uid://f2ivqptquopo"]
+
+[ext_resource type="StyleBox" uid="uid://d25ahmiih6n6f" path="res://SCENES/GUI/light_style_box_texture.tres" id="1_8tydv"]
+[ext_resource type="StyleBox" uid="uid://dv1mfey372tdc" path="res://SCENES/GUI/dark_style_box_texture.tres" id="2_xa01n"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xa01n"]
+load_path = "res://.godot/imported/GraphicUserInterface_64X64.png-352d52c64b0a51d1b9800da6deb1dbba.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7fhx"]
+atlas = SubResource("CompressedTexture2D_xa01n")
+region = Rect2(768, 128, 320, 64)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8tydv"]
+texture = SubResource("AtlasTexture_r7fhx")
+texture_margin_left = 64.0
+texture_margin_top = 12.0
+texture_margin_right = 64.0
+texture_margin_bottom = 5.0
+region_rect = Rect2(0, 0, 320, 64)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sntk3"]
+load_path = "res://.godot/imported/GraphicUserInterface_64X64.png-352d52c64b0a51d1b9800da6deb1dbba.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8tydv"]
+atlas = SubResource("CompressedTexture2D_sntk3")
+region = Rect2(768, 64, 320, 64)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xa01n"]
+texture = SubResource("AtlasTexture_8tydv")
+texture_margin_left = 64.0
+texture_margin_top = 12.0
+texture_margin_right = 64.0
+texture_margin_bottom = 4.0
+
+[resource]
+Bone_Button/colors/font_color = Color(0, 0, 0, 1)
+Bone_Button/colors/font_hover_color = Color(0.30249512, 0.30249536, 0.30249608, 1)
+Bone_Button/colors/icon_disabled_color = Color(1, 0.15294118, 0, 0.56078434)
+Bone_Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Bone_Button/styles/hover = SubResource("StyleBoxTexture_8tydv")
+Bone_Button/styles/normal = SubResource("StyleBoxTexture_xa01n")
+Bone_Button/styles/pressed = SubResource("StyleBoxTexture_8tydv")
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0.14517477, 0.46503, 0.44314924, 1)
+Button/styles/hover = ExtResource("1_8tydv")
+Button/styles/normal = ExtResource("2_xa01n")
+Button/styles/pressed = ExtResource("1_8tydv")
