@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://bflbxvfhilbrl"]
+
+[ext_resource type="Texture2D" uid="uid://b54y4f45mtbww" path="res://ASSETS/Art/Characters/Plants_64X64.png" id="1_ixpa6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_krxrt"]
+atlas = ExtResource("1_ixpa6")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnihi"]
+atlas = ExtResource("1_ixpa6")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vi5aj"]
+atlas = ExtResource("1_ixpa6")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jws3a"]
+atlas = ExtResource("1_ixpa6")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhl7u"]
+atlas = ExtResource("1_ixpa6")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lut5"]
+atlas = ExtResource("1_ixpa6")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1eayy"]
+atlas = ExtResource("1_ixpa6")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oowgg"]
+atlas = ExtResource("1_ixpa6")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_od4yy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_krxrt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dnihi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vi5aj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jws3a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jws3a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jws3a")
+}],
+"loop": true,
+"name": &"Action",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhl7u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lut5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1eayy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oowgg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1eayy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lut5")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 4.0
+}]
+
+[node name="Leaf" type="AnimatedSprite2D" unique_id=1009159685]
+position = Vector2(0, -29)
+sprite_frames = SubResource("SpriteFrames_od4yy")
+animation = &"Idle"
+autoplay = "Idle"
+frame = 1
+frame_progress = 0.98850846
